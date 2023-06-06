@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            color: transparent;
+            border: none;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+
+        iframe {
+            border: none;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        a {
+            color: black;
+            /* color: transparent; */
+            display: block;
+            width: 100px;
+            height: 100px;
+            cursor: context-menu;
+        }
+    </style>
+    <iframe src="./test_demo_clickJacking/index.html" frameborder="0"></iframe>
+    <div id="demo2">
+        <a target="_blank" href="https://www.facebook.com/aow.page">Click here</a>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
